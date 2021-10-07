@@ -393,6 +393,10 @@
   color: #f02;
 }
 
+.heading-3.no-margin {
+  margin-top: 0px;
+}
+
 .div-block-18 {
   width: 100%;
   height: 100%;
@@ -1871,4 +1875,3 @@
     padding-left: 20px;
   }
 }
-
