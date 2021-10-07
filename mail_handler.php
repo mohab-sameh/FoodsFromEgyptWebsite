@@ -1,12 +1,30 @@
-<?php
-$to_email = "xokema9679@cantouri.com";
-$subject = "Simple Email Test via PHP";
-$body = "Hi, This is test email send by PHP Script";
-$headers = "From: sender email";
+ <?php
+  require_once "Mail.php";
 
-if (mail($to_email, $subject, $body, $headers)) {
-    echo "Email successfully sent to $to_email...";
-} else {
-    echo "Email sending failed...";
-}
-?>
+  $from = "jakepaulsucks42069@gmail.com";
+  $to = 'ximatoh105@mxgsby.com';
+
+  $host = "ssl://smtp.gmail.com";
+  $port = "465";
+  $username = 'jakepaulsucks42069@gmail.com';
+  $password = 'Clubboba1';
+
+  $subject = "test";
+  $body = "test";
+
+  $headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+  $smtp = Mail::factory('smtp',
+    array ('host' => $host,
+      'port' => $port,
+      'auth' => true,
+      'username' => $username,
+      'password' => $password));
+
+  $mail = $smtp->send($to, $headers, $body);
+
+  if (PEAR::isError($mail)) {
+    echo($mail->getMessage());
+  } else {
+    echo("Message successfully sent!\n");
+  }
+  ?>
