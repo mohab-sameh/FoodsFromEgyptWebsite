@@ -790,15 +790,21 @@
       </div>
       <div class="div-block-37">
         <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="post" class="form"><input type="text" class="text-field w-input" maxlength="256" name="FirstName" data-name="FirstName" placeholder="First Name*" id="FirstName" required=""><input type="text" class="text-field w-input" maxlength="256" name="LastName" data-name="LastName" placeholder="Last Name*" id="LastName" required=""><input type="text" class="text-field w-input" maxlength="256" name="email" data-name="email" placeholder="Email*" id="email" required=""><input type="text" class="text-field w-input" maxlength="256" name="mobile" data-name="mobile" placeholder="Mobile*" id="mobile" required=""><input type="text" class="text-field w-input" maxlength="256" name="country" data-name="country" placeholder="Country" id="country"><input type="submit" value="GET THE CATALOGUE" data-wait="Please wait..." class="submit-button w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
+          <form id="email-form" name="email-form" data-name="Email Form" method="post" class="form">
+            <input type="text" class="text-field w-input" maxlength="256" name="FirstName" data-name="FirstName" placeholder="First Name*" id="FirstName" required="">
+            <input type="text" class="text-field w-input" maxlength="256" name="LastName" data-name="LastName" placeholder="Last Name*" id="LastName" required="">
+            <input type="text" class="text-field w-input" maxlength="256" name="email" data-name="email" placeholder="Email*" id="email" required="">
+            <input type="text" class="text-field w-input" maxlength="256" name="mobile" data-name="mobile" placeholder="Mobile*" id="mobile" required="">
+            <input type="text" class="text-field w-input" maxlength="256" name="country" data-name="country" placeholder="Country" id="country">
+            <input type="submit" action="mail_handler.php" value="GET THE CATALOGUE" data-wait="Please wait..." class="submit-button w-button"></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
     <div class="div-block-39">
       <div class="text-block-6">® Food Export Council (FEC), 2021.</div>
