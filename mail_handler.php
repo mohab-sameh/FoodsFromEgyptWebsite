@@ -7,7 +7,7 @@
   $host = "ssl://smtp.gmail.com";
   $port = "465";
   $username = 'jakepaulsucks42069@gmail.com';
-  $password = 'Clubboba1';
+  $password = ${{secret.PASSWORD}};
 
   $subject = "test";
   $body = "test";
